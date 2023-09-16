@@ -3,7 +3,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # Open the image
-img = np.array(Image.open('dancing-spider.jpg')).astype(np.uint8)
+img = np.array(Image.open('sample-img.jpg')).astype(np.uint8)
 
 # Apply gray scale
 gray_img = np.round(0.299 * img[:, :, 0] +
@@ -53,7 +53,7 @@ for i in range(1, h - 1):
         newgradientImage[i - 1, j - 1] = mag
 
 plt.figure()
-plt.title('dancing-spider-sobel.png')
-plt.imsave('dancing-spider-sobel.png', newgradientImage, cmap='gray', format='png')
+plt.title('sample-img.jpg')
+plt.imsave('sample-img.jpg', newgradientImage, cmap='gray', format='png')
 plt.imshow(newgradientImage, cmap='gray')
 plt.show()
