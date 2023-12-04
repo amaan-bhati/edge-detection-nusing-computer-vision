@@ -9,7 +9,7 @@ gray_img = np.round(0.299 * img[:, :, 0] +
                     0.587 * img[:, :, 1] +
                     0.114 * img[:, :, 2]).astype(np.uint8)
 
-# Sobel Operator
+
 h, w = gray_img.shape
 # define filters
 horizontal = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])  # s2
