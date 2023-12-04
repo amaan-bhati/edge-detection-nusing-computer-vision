@@ -2,7 +2,6 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-# Open the image
 img = np.array(Image.open('sample-img.jpg')).astype(np.uint8)
 
 # Apply gray scale
